@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import com.etiko.model.Student;
+import com.etiko.model.Zlecenia;
 
 
 @Controller
@@ -16,7 +16,7 @@ public class HomeController {
 	
 	
 	@Autowired
-	Studentrepo repo;
+	Zleceniarepo repo;
 	
 	@RequestMapping("/")
 	public String home()
@@ -24,7 +24,7 @@ public class HomeController {
 		return "index";
 	}
 	
-	@GetMapping("getStudents")
+	@GetMapping("getZlecenia")
 	public String getStudents(Model m)
 	{
 		
@@ -34,12 +34,12 @@ public class HomeController {
 	}
 	
 	
-	@RequestMapping("addStudent")
-	public String addStudent(@RequestParam int rollno, @ModelAttribute Student s, Model m) {
+	@RequestMapping("addZlecenie")
+	public String addStudent(@RequestParam int id, @ModelAttribute Zlecenia z, Model m) {
 		
 		
-		repo.save(s);
-		m.addAttribute("result", repo.findById(rollno));
+		repo.save(z);
+		m.addAttribute("result", repo.findAll());
 		
 		
 		return "result";
