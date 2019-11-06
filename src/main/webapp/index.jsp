@@ -7,14 +7,16 @@
 <title>Insert title here</title>
 </head>
 <body>
-<form action="addStudent">
+<form action="addStudent" name="Dodaj Zlecenie">
 Podaj rollno: <input type="text" name="rollno">
 Podaj marks:<input type="text" name="marks">
 Podaj name:<input type="text" name="name">
 <input type="submit" value="Dodaj do bazy">
 </form>
+<br>
+<br>
 <form action="getStudents">
-<input type="submit" value="Pokaz zawartosc bazy">
+<input type="submit" value="Pokaz zlecenia">
 </form>
 </body>
 </html>
