@@ -7,12 +7,9 @@ import javax.persistence.Id;
 
 @Entity
 public class Zlecenia {
-	
 
-
-	
-		@Id
-		private int id;
+@Id
+private int id;
 		
 		private int idWykrojnika;
 		private int szerokoscSurowca;
@@ -22,6 +19,12 @@ public class Zlecenia {
 		private String numerEtykiety;
 		private String nazwaKlienta;
 		private String nazwaEtykiety;
+		private String maszyna;
+		private String rodzajSurowca;
+		private String wystawil;
+		private String[] kolory;
+		private Date dataWysylki;
+		
 		
 		public Zlecenia() {}
 		
@@ -136,12 +139,7 @@ public class Zlecenia {
 		public void setDataWysylki(Date dataWysylki) {
 			this.dataWysylki = dataWysylki;
 		}
-		private String maszyna;
-		private String rodzajSurowca;
-		private String wystawil;
-		private String[] kolory;
-		private Date dataWysylki;
-		
+	
 		
 	
 		

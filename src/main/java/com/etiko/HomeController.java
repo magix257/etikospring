@@ -39,7 +39,7 @@ public class HomeController {
 		
 		
 		repo.save(z);
-		m.addAttribute("result", repo.findAll());
+		m.addAttribute("result", repo.findById(id));
 		
 		
 		return "result";
