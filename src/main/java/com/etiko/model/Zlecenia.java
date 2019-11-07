@@ -2,27 +2,43 @@ package com.etiko.model;
 import java.sql.Date;
 import java.util.Arrays;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
 @Entity
 public class Zlecenia {
 
-@Id
+	  @GeneratedValue
+	    @Id
 private int id;
 		
+	  @Column
 		private int idWykrojnika;
+	  @Column
 		private int szerokoscSurowca;
+	  @Column
 		private int priorytet;
+	  @Column
 		private int iloscEtykiet;
+	  @Column
 		private int gilza;
+	  @Column
 		private String numerEtykiety;
+	  @Column
 		private String nazwaKlienta;
+	  @Column
 		private String nazwaEtykiety;
+	  @Column
 		private String maszyna;
+	  @Column
 		private String rodzajSurowca;
+	  @Column
 		private String wystawil;
+	  @Column (columnDefinition = "CHAR")
 		private String[] kolory;
+	  @Column
 		private Date dataWysylki;
 		
 		
