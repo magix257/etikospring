@@ -36,7 +36,7 @@ private int id;
 		private String rodzajSurowca;
 	  @Column
 		private String wystawil;
-	  @Column (columnDefinition = "CHAR")
+	  @Column
 		private String[] kolory;
 	  @Column
 		private Date dataWysylki;
