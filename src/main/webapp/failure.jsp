@@ -91,34 +91,7 @@
 </g>
 </svg>
 </div>
- 
-<div class="container">
- <div class="form-group">
-<form action="addZlecenie" name="Dodaj Zlecenie">
-<p>Podaj date Wysylki:</p><p align="left"><input type="date" id="start" name="dataWysylki"></p>
-<!-- <p>Podaj id Zlecenia:</p><p align="left"> <input type="text" name="id"></p> -->
-<p>Podaj id Wykrojnika:</p><p align="left"> <input type="text" name="idWykrojnika"></p>
-<p>Podaj Szerokosc Materialu:</p><p align="left"><input type="text" name="szerokoscSurowca"></p><br>
-<p>Podaj Priorytet 1-10:</p><p align="left"> <input type="text" name="priorytet"></p><br>
-<p>Podaj Ilosc Etykiet:</p><p align="left"> <input type="text" name="iloscEtykiet"></p><br>
-<p>Podaj gilze:</p><p align="left"> <input type="text" name="gilza"></p><br>
-<p>Podaj numer Etykiety:</p><p align="left"> <input type="text" name="numerEtykiety"></p><br>
-<p>Podaj nazwe Etykiety:</p><p align="left"> <input type="text" name="nazwaEtykiety"></p><br>
-<p>Podaj nazwe Klienta:</p><p align="left"> <input type="text" name="nazwaKlienta"></p><br>
-<p>Podaj numer Maszyny:</p><p align="left"> <input type="text" name="maszyna"></p><br>
-<p>Podaj rodzaj Surowca:</p><p align="left"> <input type="text" name="rodzajSurowca"></p><br>
-<p>Wystawil:</p><p align="left"> <input type="text" name="wystawil"></p><br>
-<p>Podaj kolory:</p><p align="left"><input type="text" name="kolory"></p><br>
-<input type="submit" value="Dodaj do bazy">
-</form>
-</div>
-<br>
-<br>
- <div class="form-group">
-<form action="getZlecenia">
-<input type="submit" value="Pokaz zlecenia">
-</form>
-</div>
-</div>
+
+<h1>Login Failed</h1>
 </body>
-</html>		
+</html>

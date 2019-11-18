@@ -1,8 +1,7 @@
 package com.etiko;
 
-import org.springframework.boot.autoconfigure.security.SecurityProperties.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface UserRepository extends JpaRepository<User, Long> {
-	 User findByUsername(String username);
+public interface UserRepository extends JpaRepository<Users, Integer> {
+	 Users findByUsername(String username);
 }
